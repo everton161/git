@@ -40,6 +40,9 @@ body {
 .page-section {
     min-height: 100vh;
 }
+.half-page-section {
+    min-height: 50vh;
+}
 
 .white-bg {
     background-color: var(--white-color);
@@ -57,7 +60,7 @@ body {
 }
 
 .menu-spacing {
-    height: 5rem;
+    height: 2rem;
 }
 
 .icon-verified {
@@ -83,7 +86,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 0 3rem;
+    padding: 1rem 0 1rem;
 }
 
 .main-menu ul {
@@ -178,8 +181,56 @@ h6 {
     margin-bottom: 4rem;
 }
 
-.about-page {
+.about-page, .jobs-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.inner-grid p {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align:center;
+}
+
+.job-name {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: end;
+}
+
+.job-name::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    font-style: italic;
+    padding-right: 2rem;
+    font-size: 6rem;
+    transform: rotate(16deg);
+    
+}
+.about-details {
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+}
+.about-details a {
+    display: block;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 700;
+
+}
+
+.about-details a:hover {
+    color: crimson;
 }
