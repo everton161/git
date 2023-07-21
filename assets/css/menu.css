@@ -1,0 +1,71 @@
+.header {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: var(--white-color);
+
+}
+
+.menu-spacing {
+    height: 2rem;
+}
+
+.icon-verified {
+    padding-top: 0.5rem;
+    width: 3rem;
+    fill: rgb(4, 4, 134);
+}
+
+.personal, .link-nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.foto-perfil {
+    width: 4.5rem;
+    border-radius: 50%;
+    padding-right: 0.5rem;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+
+.main-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.main-menu li {
+    padding-left: 1rem;
+}
+
+.menu-item-number {
+    padding-right: 0.2rem;
+}
+
+.header-menu a {
+    color: var(--primary-color);
+}
+
+
+.menu-item-link::after {
+    content: '';
+    display: block;
+    border-top: solid 0.5rem transparent;
+    transform: scale(0);
+    transform-origin: 0 50%;
+    transition: 300ms;
+}
+
+.menu-item-link:hover::after {
+    
+    border-top: solid 0.5rem blue;
+    transform: scale(1);
+}
+

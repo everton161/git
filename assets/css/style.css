@@ -8,6 +8,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -35,85 +36,16 @@ body {
 .container {
     max-width: 120rem;
     margin: 0 auto;
+    padding: 10rem 5rem;
 }
 
 .page-section {
     min-height: 100vh;
 }
-.half-page-section {
-    min-height: 50vh;
-}
 
 .white-bg {
     background-color: var(--white-color);
 }
-
-.header {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: var(--white-color);
-
-}
-
-.menu-spacing {
-    height: 2rem;
-}
-
-.icon-verified {
-    padding-top: 0.5rem;
-    width: 3rem;
-    fill: rgb(4, 4, 134);
-}
-
-.personal, .link-nome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.foto-perfil {
-    width: 4.5rem;
-    border-radius: 50%;
-    padding-right: 0.5rem;
-}
-
-.header-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0 1rem;
-}
-
-.main-menu ul {
-    display: flex;
-    list-style: none;
-}
-
-.main-menu li {
-    padding-left: 1rem;
-}
-
-
-.menu-item-link::after {
-    content: '';
-    display: block;
-    border-top: solid 0.5rem transparent;
-    transform: scale(0);
-    transform-origin: 0 50%;
-    transition: 300ms;
-}
-
-.menu-item-link:hover::after {
-    
-    border-top: solid 0.5rem blue;
-    transform: scale(1);
-}
-
 
 p {
     line-height: 3rem;
@@ -149,88 +81,24 @@ h6 {
     font-size: 2.5rem;
 }
 
-
-
-.intro-content {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: var(--gap);
+.footer {
+    display: flex;
     justify-content: center;
+
     align-items: center;
+
 }
 
-.intro-content h2 {
-    text-transform: uppercase;
-    font-size: 7rem;
-    margin-bottom: 2rem;
+.footer p {
+    margin-top: 1rem;
+    padding: 0.5rem;
+
 }
 
-.imagem-intro img {
-    max-width: 100%;
-    height: auto;
-}
-
-.about-page .text-intro{
-    max-width: 80rem;
-    margin: 0 auto;
-    text-align: center;
-    justify-content: center;
-}
-
-.about-page .text-intro h2{
-    margin-bottom: 4rem;
-}
-
-.about-page, .jobs-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.jobs-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--gap);
-    counter-reset: grid-counter;
-}
-
-.inner-grid p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-}
-
-.job-name {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: end;
-}
-
-.job-name::before {
-    counter-increment: grid-counter;
-    content: counter(grid-counter);
-    font-style: italic;
-    padding-right: 2rem;
-    font-size: 6rem;
-    transform: rotate(16deg);
-    
-}
-.about-details {
-    display: flex;
-    margin-top: 10rem;
-    justify-content: center;
-}
-.about-details a {
+.grid-name, .grid-description::after {
+    content: '';
     display: block;
-    font-size: 2.5rem;
-    font-style: italic;
-    font-weight: 700;
+    clear: both;
 
-}
 
-.about-details a:hover {
-    color: crimson;
 }

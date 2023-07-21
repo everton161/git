@@ -1,0 +1,19 @@
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-content h2 {
+    text-transform: uppercase;
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+
+.imagem-intro img {
+    max-width: 100%;
+    height: auto;
+}
+

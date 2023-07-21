@@ -1,0 +1,56 @@
+.grid-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid-info {
+    padding-bottom: 7rem;  
+}
+
+.grid-info h2 {
+    padding-bottom: 2rem;  
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.grid-info p {  
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.job-name {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: end;
+}
+
+.job-name::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    font-style: italic;
+    padding-right: 2rem;
+    font-size: 6rem;
+    transform: rotate(16deg);
+    
+}
+
+.inner-grid {
+    overflow: hidden;
+}
+
+.inner-grid p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}

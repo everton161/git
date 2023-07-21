@@ -7,6 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/jobs.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+
     <title>Landing Page</title>
 </head>
 <body>
@@ -25,7 +32,8 @@
                     <li class="menu-item"><a class="menu-item-link" href="#home"><span class="menu-item-number">01</span>home</a></li>
                     <li class="menu-item"><a class="menu-item-link" href="#about"><span class="menu-item-number">02</span>about</a></li>
                     <li class="menu-item"><a class="menu-item-link" href="#work"><span class="menu-item-number">03</span>work</a></li>
-                    <li class="menu-item"><a class="menu-item-link" href="#"><span class="menu-item-number">04</span>contact</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="#gallery"><span class="menu-item-number">04</span>gallery</a></li>
+                    <li class="menu-item"><a class="menu-item-link" href="#contact"><span class="menu-item-number">05</span>contact</a></li>
                 </ul> 
             </nav>
         </div>
@@ -56,21 +64,102 @@
         </div>
     </section>
     <section class="jobs-section page-section container white-bg" id="work">
-        <h2>Last jobs</h2>
-        <div class="jobs-grid">
-            <article class="inner-grid">
-                <h3 class="job-name">First Internship:</h3>
-                <p> During my educational technology internship, I had the opportunity to work closely with databases, focusing on managing and optimizing data integration. I developed efficient database structures to facilitate seamless access to essential information within educational institutions, enhancing overall operations and educational processes.</p>
-            </article>
-            <article class="inner-grid">
-                <h3 class="job-name">Second Internship:</h3>
-                <p>As an intern in the automotive manufacturing company's help desk department, I provided prompt and effective technical support to employees. My role involved troubleshooting hardware and software issues, ensuring minimal disruptions to the production process and maintaining seamless factory floor operations.</p>
-            </article>
-            <article class="inner-grid">
-                <h3 class="job-name">Third Internship:</h3>
-                <p>During my internship, I customized Microsoft Dynamics CRM solutions to align with each company's specific needs and workflows. This enhanced customer relationship management, resulting in improved sales and service effectiveness and providing valuable insights into adaptability and innovation in CRM solutions.</p>
-            </article>
+        
+        <div class="grid-content">
+            <div class="grid-info">
+                <h2 class="grid-name">Last Jobs</h2>
+                <p class="grid-description">
+                    A basic introduction of my last three jobs.
+                </p>
+            </div>
+            <div class="grid">
+                <article class="inner-grid">
+                    <h3 class="job-name">First Internship:</h3>
+                    <p> During my educational technology internship, I had the opportunity to work closely with databases, focusing on managing and optimizing data integration. I developed efficient database structures to facilitate seamless access to essential information within educational institutions, enhancing overall operations and educational processes.</p>
+                </article>
+                <article class="inner-grid">
+                    <h3 class="job-name">Second Internship:</h3>
+                    <p>As an intern in the automotive manufacturing company's help desk department, I provided prompt and effective technical support to employees. My role involved troubleshooting hardware and software issues, ensuring minimal disruptions to the production process and maintaining seamless factory floor operations.</p>
+                </article>
+                <article class="inner-grid">
+                    <h3 class="job-name">Third Internship:</h3>
+                    <p>During my internship, I customized Microsoft Dynamics CRM solutions to align with each company's specific needs and workflows. This enhanced customer relationship management, resulting in improved sales and service effectiveness and providing valuable insights into adaptability and innovation in CRM solutions.</p>
+                </article>
+            </div>
+
         </div>
     </section>
+    <section class="gallery page-section container main-bg" id="gallery">
+        
+        <div class="grid-content">
+            <div class="grid-info">
+                <h2 class="grid-name">Gallery</h2>
+                <p class="grid-description">
+                    Some random pictures with a cute message.
+                </p>
+            </div>
+
+            <div class="grid">
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=1" alt="random unsplash photo">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=2" alt="random unsplash photo">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=3" alt="random unsplash photo">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=4" alt="random unsplash photo">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=5" alt="random unsplash photo">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=6" alt="random unsplash photo">
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+    <section class="contact-page intro-content main-bg page-section container" id="contact">
+        <div class="text-intro">
+            <h2>Contact me</h2>
+            <p>Have a question or need assistance? Use the contact form below to get in touch, and i'll get back to you as soon as possible!</p>
+        </div>
+        <div class="imagem-intro">
+            <img src="assets/img/contact-img-svg.svg" alt="mulher procurando contato">
+        </div>
+        <div class="contact-form">
+            <fieldset class="form-grid">
+                <legend>put your information</legend>
+                <div class="form-group">
+                    <label for="first-name">name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="your name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">last name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="your last name">
+                </div>
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="email" name="email" id="email"  placeholder="your last email">
+                </div>
+                <div class="form-group full-widht">
+                    <label for="msg">leave a message</label>
+                    <textarea name="msg" id="msg" cols="30" rows="8" placeholder="Put a message here."></textarea>
+                </div>
+                
+                <div class="form-group full-widht">
+                    <button class="form-btn" type="submit">Send message</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+    <footer class="footer white-bg">
+        <p>Landing page project by Everton. ❤</p>
+    </footer>
+    
 </body>
 </html>

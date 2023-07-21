@@ -1,0 +1,35 @@
+.about-page .text-intro{
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.about-page .text-intro h2{
+    margin-bottom: 4rem;
+}
+
+.about-page, .jobs-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-details {
+    display: flex;
+    margin-top: 10rem;
+    justify-content: center;
+}
+.about-details a {
+    color: var(--primary-color);
+    display: block;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 700;
+
+}
+
+.about-details a:hover {
+    color: crimson;
+}
